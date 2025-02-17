@@ -17,10 +17,8 @@ main {
 }
 
 #fallback {
-  font-weight: bold;
-  font-size: 1.15rem;
+  font-size: 1rem;
   margin: 0;
-  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -31,10 +29,5 @@ main {
 
   #users {
     flex-direction: column;
-  }
-
-  #fallback {
-    font-size: 1.5rem;
-    text-align: left;
   }
 }

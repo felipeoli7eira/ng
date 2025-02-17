@@ -25,3 +25,34 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+- components
+- decorators
+- inputs and outputs
+- component props
+- events
+- string interpolation
+- new template expressions (if, else, for with track)
+- legacy template expressions (*ngIf, *ngFor)
+- two-way data binding
+- pipes
+- services
+- dependency injection
+- html dynamic props
+- html events dispatch
+- html dynamic classes
+- FormsModule
+- basic of signal
+- ng-content element
+- template element
+- ngSubmit event
+- ngModel directive
+- basic of CLI to generate components
+- @Injectable decorator
+- constructor inject dependency
+- inject helper function
+- basic of computed, input and output functions
+- standalone components
+- how to use components
+- DatePipe

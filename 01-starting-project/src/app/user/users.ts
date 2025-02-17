@@ -1,10 +1,6 @@
-export type DYMMY_USER = {
-  id: string
-  name: string
-  avatar: string
-}
+import { type DUMMY_USER } from "./user.model";
 
-export const DUMMY_USERS: Array<DYMMY_USER> = [
+export const DUMMY_USERS: Array<DUMMY_USER> = [
   {
     id: 'u1',
     name: 'Jasmine Washington',

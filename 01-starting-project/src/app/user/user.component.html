@@ -1,6 +1,6 @@
-<div>
-  <button>
-    <img [src]="'assets/users/'.concat(selectedUser.avatar)" [alt]="selectedUser.name.concat('s avatar')" />
-    <span>{{ selectedUser.name }} {{ selectedUserIndex }}</span>
+<app-card>
+  <button type="button" (click)="onSelectUser()" [class.active]="selected">
+    <img [src]="getAvatarPath" />
+    <span>{{ user?.name ?? 'No user selected' }}</span>
   </button>
-</div>
+</app-card>

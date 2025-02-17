@@ -1,0 +1,27 @@
+<section id="tasks">
+  <header>
+    <h4>{{ user?.name ?? 'No user selected' }}</h4>
+
+    <menu>
+      <button type="button" (click)="openNewTaskFormDialog()">Add task</button>
+    </menu>
+  </header>
+
+  @if(getSelectedUserTasks.length) {
+    <ul>
+      @for(task of getSelectedUserTasks ; track task.id) {
+        <li>
+          <app-task [task]="task" (onCompleted)="taskCompleted($event)" />
+        </li>
+      }
+    </ul>
+  }
+</section>
+
+@if(isNewTaskFormDialogOpen) {
+  <app-new-task-form-dialog
+    [userId]="user?.id"
+    (onCloseDialog)="changeNewTaskFormDialogVisibilityStateTo($event)"
+    (submitted)="addTask($event)"
+  />
+}
